@@ -2,7 +2,7 @@
 if (NOT DEFINED WITH_PLUGIN_EXAMPLE OR WITH_PLUGIN_EXAMPLE)	    
     # Declare the plugin as a shared library
     add_library(yampl-example SHARED
-	    ${CMAKE_CURRENT_LIST_DIR}/src/plugin_main.cpp
+	    ${CMAKE_CURRENT_LIST_DIR}/src/PluginMain.cpp
         ${YAMPL_PLUGIN_COMMON_SRCS}
     )
     
