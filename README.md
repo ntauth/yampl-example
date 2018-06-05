@@ -22,3 +22,7 @@ make install
 
 How to make your own?
 -------
+A YAMPL plugin is essentially composed by three procedures:
+- *PluginMain*: The entry point of the plugin. This is called by the application as soon as the plugin dynamic module is loaded in memory. This procedure initializes the plugin internal structures, negotiates the API version and registers all the objects it exposes to the application.
+- *CreateObject*: The hook procedure called by the application whenever it needs to create an object of some type.
+- *DestroyObject*: The hook procedure called by the application to destroy an object previously created by the plugin.
