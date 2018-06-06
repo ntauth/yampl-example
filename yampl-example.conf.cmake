@@ -17,6 +17,6 @@ if (NOT DEFINED WITH_PLUGIN_EXAMPLE OR WITH_PLUGIN_EXAMPLE)
 
     # Install
     install(TARGETS yampl-example
-            LIBRARY DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/plugins/yampl-example"
+            LIBRARY DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/plugins"
     )
 endif()
